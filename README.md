@@ -37,6 +37,17 @@ The project uses STM32 HAL libraries and a third-party SSD1306 library. The main
    - VRy < 1000: Right
    - VRy > 3000: Left
 
+## Additional Information : C printf Formatting: %04d vs %4d
+Quick comparison of two common `printf` format specifiers in C:
+
+- **`%04d`**: Prints a 4-digit number, padded with **zeros**.
+  - Example: `printf("%04d", 7);` → `0007`
+
+- **`%4d`**: Prints a 4-digit number, padded with **spaces**.
+  - Example: `printf("%4d", 7);` → `   7`
+
+Use `%04d` for zero-padded numbers (like IDs), `%4d` for right-aligned output.
+
 ## Libraries Used
 
 - `ssd1306.h` - OLED display driver
