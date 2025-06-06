@@ -166,8 +166,6 @@ int main(void)
 
 		Write_OLED();
 
-	    SSD1306_UpdateScreen(); // update screen
-
 		HAL_Delay(100);
 
   }
